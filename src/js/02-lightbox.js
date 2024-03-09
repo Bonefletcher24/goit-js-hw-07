@@ -1,4 +1,4 @@
-import { galleryItems } from "./gallery-items.js";
+import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
 console.log(galleryItems);
@@ -20,5 +20,8 @@ function createGalleryItem(array) {
 const photosMarkup = createGalleryItem(galleryItems);
 galleryContainter.insertAdjacentHTML("beforeend", photosMarkup);
 
-const galleryHandler = new SimpleLightbox(".gallery a", { captionsData: "alt", captionsDelay: 250 });
-galleryHandler.on("show.simplelightbox");
+const galleryHandler = new SimpleLightbox(".gallery a", { 
+    captionsData: "alt", 
+    captionsDelay: 250 
+});
+galleryHandler.on("show.SimpleLightbox");
